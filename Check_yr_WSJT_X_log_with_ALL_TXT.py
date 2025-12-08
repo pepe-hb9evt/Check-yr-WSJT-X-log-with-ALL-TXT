@@ -1,4 +1,5 @@
 from compress_data import filter_lines_with_callsign
+from lines_viewer import LinesViewer
 
 # Variablen fuer Rufzeichen und Dateipfade
 callsign = "HB9EVT"
@@ -18,12 +19,17 @@ navigator = filter_lines_with_callsign(
     output_file,
 )
 
+
+viewer = LinesViewer(navigator)
+viewer.run()
+
+
 # Beispielnutzung:
-print("Erste Zeile:", navigator.first())
-print("Naechste Zeile:", navigator.next_forward())
-print("Letzte Zeile:", navigator.last())
-print("Vorherige Zeile:", navigator.next_backward())
-print("3. Zeile:", navigator.at(2))
+# print("Erste Zeile:", navigator.first())
+# print("Naechste Zeile:", navigator.next_forward())
+# print("Letzte Zeile:", navigator.last())
+# print("Vorherige Zeile:", navigator.next_backward())
+# print("3. Zeile:", navigator.at(2))
 
 # Bestaetigungsnachricht
 print("Filtering completed. Check 'filtered_lines.txt' for results.")
