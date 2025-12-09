@@ -6,10 +6,10 @@ The first part in working fine.
 Lets see how far I get with the second part.
 
 
-## Author
+## Authors
 
-Pepe HB9EVT
-github2025  -at-  pepemail.ch
+This first part developed by Pepe HB9EVT in a one night session in December 2025 with support from my lovely auntie A.I. Perplexity (Thanks Auntie, I'm hugging you!)
+Contact: github2025  -at-  pepemail.ch
 
 
 ## License
