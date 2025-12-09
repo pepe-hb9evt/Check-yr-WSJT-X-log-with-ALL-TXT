@@ -1,7 +1,29 @@
+"""
+LICENSE
+==========
+This file is part of <Check_yr_WSJT_X_log_with_ALL_TXT>
+Licensed under the MIT License - see the LICENSE file for details.
+
+Developed by Pepe HB9EVT
+with support from my lovely auntie A.I. Perplexity, 2025
+
+I would appreciate a short email if you use this software:
+github2025  -at-  pepemail.ch
+"""
+
+"""
+compressed_data.py
+==================
+Funktion zum Filtern von Zeilen mit einem spezifischen Rufzeichen
+"""
+
+
+# IMPORTS
 from pathlib import Path
 from typing import List, Optional
 
 
+# Navigator-Klasse fuer zeilenweises Auslesen
 class LineNavigator:
     def __init__(self, lines: List[str]) -> None:
         self._lines = lines
@@ -46,8 +68,10 @@ class LineNavigator:
 
     def __len__(self) -> int:
         return len(self._lines)
+# ENDE Navigator-Klasse ---------------------------
 
 
+# Funktion zum Filtern der Zeilen
 def filter_lines_with_callsign(
     callsign: str,
     input_path: str | Path,
@@ -90,8 +114,10 @@ def filter_lines_with_callsign(
 
     # Ergebnis zusaetzlich in einem Navigator-Objekt zurückgeben
     return LineNavigator(result_lines)
+# ENDE Funktion filter_lines_with_callsign ------------
 
 
+# Beispielaufruf und Nutzung
 if __name__ == "__main__":
 
     # Beispielaufruf:

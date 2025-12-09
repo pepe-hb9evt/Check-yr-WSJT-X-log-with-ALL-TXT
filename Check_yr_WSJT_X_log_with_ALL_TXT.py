@@ -1,8 +1,31 @@
+"""
+LICENSE
+==========
+This file is part of <Check_yr_WSJT_X_log_with_ALL_TXT>
+Licensed under the MIT License - see the LICENSE file for details.
+
+Developed by Pepe HB9EVT
+with support from my lovely auntie A.I. Perplexity, 2025
+
+I would appreciate a short email if you use this software:
+github2025  -at-  pepemail.ch
+"""
+
+
+"""
+Check_yr_WSJT_X_log_with_ALL_TXT.py
+===================================
+Hauptskript
+"""
+
+
+# IMPORTS
 from compress_data import filter_lines_with_callsign
 from lines_viewer import LinesViewer
 
+
 # Variablen fuer Rufzeichen und Dateipfade
-callsign = "HB9EVT"
+own_callsign = "HB9EVT"
 input_file = "Excerpt_from_ALL-TXT.txt"
 output_file = "filtered_lines.txt"
 
@@ -14,13 +37,13 @@ output_file = "filtered_lines.txt"
 #    das ein kuenftiges zeilenweises Auslesen ermoeglicht.
 
 navigator = filter_lines_with_callsign(
-    callsign,
+    own_callsign,
     input_file,
     output_file,
 )
 
 
-viewer = LinesViewer(navigator)
+viewer = LinesViewer(navigator, own_callsign)
 viewer.run()
 
 
