@@ -22,7 +22,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Check_yr_WSJT_X_log_with_ALL_TXT.py" />
-    <Compile Include="lines_viewer.py" />
+    <Compile Include="sub_compress_data.py" />
+    <Compile Include="sub_lines_viewer.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectName.pyproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

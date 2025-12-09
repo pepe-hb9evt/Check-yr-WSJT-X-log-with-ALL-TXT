@@ -20,8 +20,8 @@ Hauptskript
 
 
 # IMPORTS
-from compress_data import filter_lines_with_callsign
-from lines_viewer import LinesViewer
+from sub_compress_data import filter_lines_with_callsign
+from sub_lines_viewer import LinesViewer
 
 
 # Variablen fuer Rufzeichen und Dateipfade

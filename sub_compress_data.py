@@ -12,8 +12,8 @@ github2025  -at-  pepemail.ch
 """
 
 """
-compressed_data.py
-==================
+compress_data.py
+================
 Funktion zum Filtern von Zeilen mit einem spezifischen Rufzeichen
 """
 
