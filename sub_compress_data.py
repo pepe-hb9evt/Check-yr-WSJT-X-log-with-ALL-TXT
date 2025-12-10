@@ -1,7 +1,7 @@
 """
 LICENSE
 ==========
-This file is part of <Check_yr_WSJT_X_log_with_ALL_TXT>
+This file is part of the project <Check_yr_WSJT_X_log_with_ALL_TXT>
 Licensed under the MIT License - see the LICENSE file for details.
 
 Developed by Pepe HB9EVT
